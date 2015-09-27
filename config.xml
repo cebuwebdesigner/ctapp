@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.infooliverconcepts.com.info265.bleemap"
+        versionCode="12" 
+        version   = "1.0.2">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Cebu Tour Guide</name>
+
+    <description>
+        Cebu Tour Guide, use for searching tour package for your next destination. You may choose your tour and reserve it for future booking.
+    </description>
+
+    <author href="https://www.oliverconcepts.com" email="info@oliverconcepts.com">
+       Engr. Oliver Gonzales
+    </author>
+
+	<icon src="icon.png" />
+	<gap:splash src="splash.png" />
+	
+	<access origin="*"/>
+     <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+	
+	
+	
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+	</feature>
+
+<feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+</feature>
+
+</widget>
