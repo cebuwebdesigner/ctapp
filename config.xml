@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.infooliverconcepts.com.info265.bleemap"
+        id        = "com.cebu-tours.zubu"
         versionCode="12" 
         version   = "1.0.2">
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Cebu Tour Guide</name>
+    <name>Zubu Travel and Tours</name>
 
     <description>
-        Cebu Tour Guide, use for searching tour package for your next destination. You may choose your tour and reserve it for future booking.
+        Zubu Travel and Tours | Cebu Tour Guide, use for searching tour package for your next destination. You may choose your tour and reserve it for future booking.
     </description>
 
     <author href="https://www.oliverconcepts.com" email="info@oliverconcepts.com">
