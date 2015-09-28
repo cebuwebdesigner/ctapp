@@ -2,63 +2,16 @@
 <html>
   <head>
     <title>CEBU TOUR GUIDE</title>
-
 <!--http://docs.phonegap.com/en/edge/cordova_inappbrowser_inappbrowser.md.html-->
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-    
-    
+    <script type="text/javascript" charset="utf-8">
 
-     <script type="text/javascript" charset="utf-8">
-    function makeid()
-{
-    var text = "";
-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-    for( var i=0; i < 5; i++ )
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-    return text;
-}
-
- 
-
-
-/*var obj = new Image();
-    obj.src = 'http://www.buildwebdesign.com/applauncher/bg_tile.jpg?id='+makeid();
-
-if (obj.complete) {
-    alert('worked');
-} else {
-    alert('no worky');
-}*/
-
-
- 
-function imageExists(url, callback) {
-  var img = new Image();
-  img.onload = function() { callback(true); };
-  img.onerror = function() { callback(false); };
-  img.src = url;
-}
-
-// Sample usage
-var imageUrl = 'http://www.buildwebdesign.com/applauncher/bg_tile.jpg?id='+makeid();
-imageExists(imageUrl, function(exists) {
-  
-  //alert('RESULT: url=' + imageUrl + ', exists=' + exists);
-  if(exists==true){netlive();}else{
-	  
-	  var elem = document.getElementById('nonet');
-	  
-	  elem.style.visibility = 'visible'; }
-  
-});
-
-function netlive() {
-	 document.addEventListener("deviceready", onDeviceReady, false);
-}
     // device APIs are available
-    //onError="doNothing()" onAbort="doNothing()" 
+    //
     function onDeviceReady() {
          var ref = window.open('http://cebu-tours.com/zubu/category/local-tours/', '_blank', 'location=yes');
          ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
@@ -66,54 +19,8 @@ function netlive() {
          ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
          ref.addEventListener('exit', function(event) { alert(event.type); });
     }
-	
-	
- </script>  
-    
-    
-    <style>
-	.button{border-top: 1px solid #96d1f8;
-    background: #65a9d7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-    background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-    background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-    background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-    background: -o-linear-gradient(top, #3e779d, #65a9d7);
-    padding: 13px 26px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-    box-shadow: rgba(0,0,0,1) 0 1px 0;
-    text-shadow: rgba(0,0,0,.4) 0 1px 0;
-    color: white;
-    font-size: 15px;
-    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
-    text-decoration: none;
-    vertical-align: middle;}
-	</style>
-    
-  </head>
-  <body>
 
- <div id="nonet" style="visibility:hidden; text-align:center; padding-top: 150px; font-size:18px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif">
- <img src="icon.png" style="width:80px; opacity: 0.4;
-    filter: alpha(opacity=40);" /><br />&nbsp;<br />
- You don't seem to have an active internet connection.
-Please check your connection and try again.
-
-<br />&nbsp;<br /><br />&nbsp;<br />
-    
-    
-    <a href="index.html" class="button" style="top: 228px; left: 183px;">RECONNECT</a>
-    
- </div>
- </body>
-</html>
-    
-    
-    
+    </script>
   </head>
   <body>
   </body>
